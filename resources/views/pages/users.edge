@@ -1,0 +1,20 @@
+<!-- resources/views/users/index.edge -->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Liste des utilisateurs</title>
+</head>
+<body>
+  <h1>Liste des utilisateurs</h1>
+  <ul>
+    @each(user in users)
+      <li>
+        <strong>ID:</strong> {{ user.id }} <br>
+        <strong>Nom d'utilisateur:</strong> {{ user.username }} <br>
+        <strong>Email:</strong> {{ user.email }}
+      </li>
+    @endeach
+  </ul>
+</body>
+</html>
